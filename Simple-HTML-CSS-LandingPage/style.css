@@ -165,3 +165,17 @@ a {
   border-radius: 12px;
   border: 2px #f9faf8 solid;
 }
+
+/* End main section */
+
+/* Footer */
+
+footer {
+  height: 15vh;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9faf8c8;
+  font-weight: 600;
+}
