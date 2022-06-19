@@ -132,3 +132,35 @@ a {
   font-weight: bolder;
   margin-left: 35%;
 }
+
+/* Call to action */
+.action-call {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action-call article {
+  width: 70%;
+  background-color: #3882f6;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+.action-text h2 {
+  color: #f9faf8;
+}
+.action-text p {
+  color: #f0f0f2ad;
+}
+
+.action-button {
+  color: #f9faf8;
+  background-color: #3882f6;
+  padding: 1px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px #f9faf8 solid;
+}
