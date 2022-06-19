@@ -82,6 +82,8 @@ a {
 }
 
 /* Main section */
+
+/* random info */
 .random-info {
   height: 80vh;
   display: flex;
@@ -108,4 +110,25 @@ a {
   border: 4px #3882f6 solid;
   border-radius: 12px;
   margin-bottom: 0.5rem;
+}
+
+/* random quote */
+.random-quote {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  color: #1f2937;
+  font-size: 36px;
+}
+.random-quote p {
+  margin-left: 20%;
+  margin-right: 19%;
+}
+.thor {
+  font-size: 26px;
+  font-weight: bolder;
+  margin-left: 35%;
 }
