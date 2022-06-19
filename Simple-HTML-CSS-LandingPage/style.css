@@ -126,6 +126,7 @@ a {
 .random-quote p {
   margin-left: 20%;
   margin-right: 19%;
+  font-style: italic;
 }
 .thor {
   font-size: 26px;
