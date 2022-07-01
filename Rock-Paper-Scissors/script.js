@@ -16,17 +16,21 @@ const computerPlay = () => {
 
 const checkPlayerWinner = (choice1, choice2) => {
   if (choice1 === choice2) {
-    return "it's a tie";
+    return "It's a tie!";
   } else {
     if (choice1 === "rock") {
-      if (choice2 === "paper") return "player looses";
-      else return "player wins";
+      if (choice2 === "paper") {
+        return `You lose, ${choice2} beats ${choice1}`;
+      } else {
+        return `You win, ${choice1} beats ${choice2}`;
+      }
     } else if (choice1 === "paper") {
-      if (choice2 === "scissors") return "player looses";
-      else return "player wins";
+      if (choice2 === "scissors")
+        return `You lose, ${choice2} beats ${choice1}`;
+      else return `You win, ${choice1} beats ${choice2}`;
     } else if (choice1 === "scissors") {
-      if (choice2 === "rock") return "player looses";
-      else return "player wins";
+      if (choice2 === "rock") return `You lose, ${choice2} beats ${choice1}`;
+      else return `You win, ${choice1} beats ${choice2}`;
     }
   }
 };
