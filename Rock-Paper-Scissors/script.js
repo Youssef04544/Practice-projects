@@ -35,4 +35,24 @@ const checkPlayerWinner = (choice1, choice2) => {
   }
 };
 
-console.log(playRound());
+const game = () => {
+  let playerScore = 0;
+  let computerScore = 0;
+  for (i = 0; i < 5; i++) {
+    const roundResult = playRound();
+    if (roundResult.includes("win")) {
+      playerScore++;
+    } else if (roundResult.includes("loose")) {
+      computerScore++;
+    }
+  }
+  return `${
+    playerScore === computerScore
+      ? `It's a tie! the score is ${playerScore} for both.`
+      : playerScore > computerScore
+      ? `You're the winner! your score is ${playerScore} vs computer's score of ${computerScore}`
+      : `Computer is the winner! your score is ${playerScore} vs computer's score of ${computerScore}`
+  }`;
+};
+
+console.log(game());
