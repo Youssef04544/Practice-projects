@@ -1,7 +1,13 @@
 import "./App.css";
-
+import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 function App() {
-  return <div className='App'></div>;
+  return (
+    <main className=''>
+      <Gallery />
+      <Footer />
+    </main>
+  );
 }
 
 export default App;
